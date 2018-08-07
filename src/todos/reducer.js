@@ -3,11 +3,14 @@ import { ADD_TODO, TOGGLE_TODO, REMOVE_TODO } from './actionType';
 export default (state = [], action) => {
     switch (action.type) {
         case ADD_TODO:
-            return Object.assign({}, state, {
-                id: action.id,
-                text: action.text,
-                completed: action.completed
-            });
+            return [
+                {
+                    id: action.id,
+                    text: action.text,
+                    completed: false
+                },
+                ...state
+            ]
             break;
         case TOGGLE_TODO:
             return state.map((item) => {

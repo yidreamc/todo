@@ -1,12 +1,13 @@
 import React from 'react'
-import Todos from './todos/index'
-import Filter from './filter/index'
+import { view as Todos } from './todos/index'
+import { view as Filter } from './filter/index'
 
-function TodoApp(){
+function TodoApp() {
     return (
         <div>
-            <Todos />
             <Filter />
+            <Todos />
+
         </div>
     );
 }

@@ -1,8 +1,8 @@
-import {SET_FILTER} from './actionTypes';
-import {FilterTypes} from './constants'
+import { SET_FILTER } from './actionType';
+import { FilterTypes } from './constants'
 
 export default (state = FilterTypes.ALL, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case SET_FILTER: {
       return action.filter;
     }
