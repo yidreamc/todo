@@ -13,6 +13,7 @@ after_success:
   - mkdir -p blog-dev/source/project/todo & cp -r build/* blog-dev/source/project/todo
   - cd ./blog-dev
   - git init
+  - echo '提交至github'
   - git config --global user.name 'yidreamc'
   - git config --global user.email 'yidreamc@gmail.com'
   - git add --all
