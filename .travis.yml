@@ -4,7 +4,7 @@ branches:
   only:
    - dev
 before_install:
-  - git clone -b dev https://github.com/yidreamc/todo blog-dev
+  - git clone -b dev https://github.com/yidreamc/yidreamc.github.io.git blog-dev
 install:
   - npm install
 script:
