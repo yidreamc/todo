@@ -4,13 +4,14 @@ branches:
   only:
    - dev
 before_install:
-  - git clone -b dev https://github.com/yidreamc/yidreamc.github.io.git blog-dev
+  - git clone -b dev https://github.com/yidreamc/todo blog-dev
 install:
   - npm install
 script:
   - npm build
 after_success:
-  - cd ./public
+  - mkdir -p blog-dev/source/project/todo & cp -r build/* blog-dev/source/project/todo
+  - cd ./blog-dev
   - git init
   - git config --global user.name 'yidreamc'
   - git config --global user.email 'yidreamc@gmail.com'
