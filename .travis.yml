@@ -18,7 +18,7 @@ after_success:
   - git config --global user.email 'yidreamc@gmail.com'
   - git add --all
   - git commit -m "update"
-  - git push https://$REPO_TOKEN@github.com/yidreamc/yidreamc.github.io.git master
+  - git push https://$REPO_TOKEN@github.com/yidreamc/yidreamc.github.io.git dev
 env:
   global:
     - GH_REF: https://github.com/yidreamc/yidreamc.github.io
