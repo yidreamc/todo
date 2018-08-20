@@ -11,7 +11,6 @@ export default (state = [], action) => {
                 },
                 ...state
             ]
-            break;
         case TOGGLE_TODO:
             return state.map((item) => {
                 if (item.id === action.id) {
@@ -22,12 +21,10 @@ export default (state = [], action) => {
                     return item;
                 }
             });
-            break;
         case REMOVE_TODO:
             return state.filter((item) => {
                 return item.id !== action.id
             });
-            break;
         default:
             return state
     }
