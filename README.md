@@ -1,7 +1,5 @@
 # todo 
 ### 项目介绍  
-这个仓库保存的是我前端学习框架或者工具的过程  
-一般以`todo list`demo的形式展示
+该分支是使用![dva](https://dvajs.com/)框架实现的`todo listhttps://dvajs.com/`
 
-### 分支介绍
-- `react-redux`用`react` + `redux`实现`todo list`
+### 项目截图
