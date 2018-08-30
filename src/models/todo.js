@@ -25,7 +25,9 @@ export default {
   reducers: {
     
     update(state, action) {
-      return { ...state, ...action.payload }
+      let { currentItem } = action.payload;
+      currentItem.id = state.list.length;
+      return { ...state, currentItem }
     },
 
     submit(state) {
